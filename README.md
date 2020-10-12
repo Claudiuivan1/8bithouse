@@ -16,7 +16,7 @@ We are two Computer Engineers, now graduating in the MSc of *Engineering in Comp
 
 ## How to implement 8bithouse
 
-It's not complex to carry out **8bithouse**, but  
+It's not complex to carry out **8bithouse**, but you still need something to tune before you can start.
 
 #### Hardware
 
@@ -45,9 +45,9 @@ Arduino libraries are needed. You can install them executing `sudo apt-get insta
 
 **8bithouse** allows six commands, here is a list with the techincal explaination of their functionalities:
 
-* **add <device-name>**: Searches for a hole in the bitmap of initialized devices. If the server finds a free space, it fills the hole with the new device. At first it is disabled.
-* **rm  <device-name>**: Searches for the name received and if found, the corresponding bitmap place is freed and the device erased.
-* **enable <device-name>**: If found, the device is enabled.
-* **disable <device-name>**: If found, the device is disabled.
-* **reset <device-name>**: Frees all registered devices in the board.
-* **dim <device-name>**: Searches for the name received and if found, brightness can be increased and decreased.
+* `add <device-name>`: Searches for a hole in the bitmap of initialized devices. If the server finds a free space, it fills the hole with the new device. At first it is disabled.
+* `rm  <device-name>`: Searches for the name received and if found, the corresponding bitmap place is freed and the device erased.
+* `enable <device-name>`: If found, the device is enabled.
+* `disable <device-name>`: If found, the device is disabled.
+* `reset <device-name>`: Frees all registered devices in the board.
+* `dim <device-name>`: Searches for the name received and if found, brightness can be increased and decreased.
