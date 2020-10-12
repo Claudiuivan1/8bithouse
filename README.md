@@ -18,14 +18,14 @@ We are two Computer Engineers, now graduating in the MSc of *Engineering in Comp
 
 It's not complex to carry out **8bithouse**, but you still need something to tune before you can start.
 
-#### Hardware
+### Hardware
 
 In order to implement this project you will need an **Arduino Mega 2560** board, a **breadboard**, **wires**, a **small buzzer**, **resistors**.
 The configuration will be the one described above:
 
 (Coming soon...)
 
-#### Software
+### Software
 
 Arduino libraries are needed. You can install them executing `sudo apt-get install arduino`.
 
