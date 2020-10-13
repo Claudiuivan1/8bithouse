@@ -46,11 +46,12 @@ If access is denied, you can change the permissions with this command: `sudo chm
 
 ### Commands
 
-**8bithouse** allows six commands, here is a list with the techincal explaination of their functionalities:
+**8bithouse** allows seven commands, here is a list with the techincal explaination of their functionalities:
 
 * `8bh add <device-name>`: Searches for a hole in the bitmap of initialized devices. If the server finds a free space, it fills the hole with the new device. At first it is disabled.
 * `8bh rm  <device-name>`: Searches for the name received and if found, the corresponding bitmap place is freed and the device erased.
 * `8bh enable <device-name> | buzzer`: If found, the device is enabled.
 * `8bh disable <device-name> | buzzer`: If found, the device is disabled.
-* `8bh reset <device-name>`: Frees all registered devices in the board.
 * `8bh dim <device-name>`: Searches for the name received and if found, brightness can be increased and decreased.
+* `8bh reset <device-name>`: Frees all registered devices in the board.
+* `8bh list`: Print the status of the board and the registered devices.
