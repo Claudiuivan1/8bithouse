@@ -29,6 +29,9 @@ The configuration will be the one described above:
 
 Arduino libraries are needed. You can install them executing `sudo apt-get install arduino`.
 
+Make sure to have correct permission set on the serial port where you connect the board. 
+If access is denied, you can change the permissions with this command: `sudo chmod a+rw /dev/ttyACM0`
+
 ### Compiling and running
 
 * **Arduino**
