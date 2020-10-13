@@ -6,7 +6,7 @@
 Through a simple shell you will be able to execute the basic commands which will allow you to interact with the board.
 
 The first version accepts only eight devices, but it's easy to see that the code could be easily modified, allowing more wired pins. 
-You could add and remove devices, enable them and dim them, adjusting the power.
+You could add and remove devices, enable them and dim them, adjusting the power. Devices are emulated through leds and there is also a small buzzer notifying executed actions.
 
 ## About us
 We are two Computer Engineers, now graduating in the MSc of *Engineering in Computer Science* at *Sapienza University of Rome*. Visit our *LinkedIn* profiles to learn more about us.
@@ -50,7 +50,7 @@ If access is denied, you can change the permissions with this command: `sudo chm
 
 * `8bh add <device-name>`: Searches for a hole in the bitmap of initialized devices. If the server finds a free space, it fills the hole with the new device. At first it is disabled.
 * `8bh rm  <device-name>`: Searches for the name received and if found, the corresponding bitmap place is freed and the device erased.
-* `8bh enable <device-name>`: If found, the device is enabled.
-* `8bh disable <device-name>`: If found, the device is disabled.
+* `8bh enable <device-name> | buzzer`: If found, the device is enabled.
+* `8bh disable <device-name> | buzzer`: If found, the device is disabled.
 * `8bh reset <device-name>`: Frees all registered devices in the board.
 * `8bh dim <device-name>`: Searches for the name received and if found, brightness can be increased and decreased.
