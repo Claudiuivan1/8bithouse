@@ -20,10 +20,10 @@ It's not complex to carry out **8bithouse**, but you still need something to tun
 
 ### Hardware
 
-In order to implement this project you will need an **Arduino Mega 2560** board, a **breadboard**, **wires**, a **small buzzer**, **resistors**.
+In order to implement this project you will need an **Arduino Mega 2560** board, a **breadboard**, **wires**, a **small buzzer**, **resistors** and some **leds** which will emulate the connected devices.
 The configuration will be the one described above:
 
-(Coming soon...)
+![Scheme](./img/scheme.png)
 
 ### Software
 
@@ -45,9 +45,9 @@ Arduino libraries are needed. You can install them executing `sudo apt-get insta
 
 **8bithouse** allows six commands, here is a list with the techincal explaination of their functionalities:
 
-* `add <device-name>`: Searches for a hole in the bitmap of initialized devices. If the server finds a free space, it fills the hole with the new device. At first it is disabled.
-* `rm  <device-name>`: Searches for the name received and if found, the corresponding bitmap place is freed and the device erased.
-* `enable <device-name>`: If found, the device is enabled.
-* `disable <device-name>`: If found, the device is disabled.
-* `reset <device-name>`: Frees all registered devices in the board.
-* `dim <device-name>`: Searches for the name received and if found, brightness can be increased and decreased.
+* `8bh add <device-name>`: Searches for a hole in the bitmap of initialized devices. If the server finds a free space, it fills the hole with the new device. At first it is disabled.
+* `8bh rm  <device-name>`: Searches for the name received and if found, the corresponding bitmap place is freed and the device erased.
+* `8bh enable <device-name>`: If found, the device is enabled.
+* `8bh disable <device-name>`: If found, the device is disabled.
+* `8bh reset <device-name>`: Frees all registered devices in the board.
+* `8bh dim <device-name>`: Searches for the name received and if found, brightness can be increased and decreased.
